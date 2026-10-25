@@ -54,6 +54,6 @@ if st.button("Predict Sales", type="primary"):
         # Make prediction
         prediction = model.predict(input_data)[0]
         
-        st.success(f"### 📊 Estimated Sales: ${prediction:.2f}K")
+        st.success(f"### 📊 Estimated Sales: ${prediction:.2f}millions")
     else:
         st.error("Model not found. Please ensure 'model.sav' is uploaded to the root directory.")
